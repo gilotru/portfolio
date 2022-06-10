@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
 </head>
 <body>
     <nav class="navbar">
@@ -30,12 +33,157 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Hello, My name 1</div>
-                <div class="text-2">Hello, My name 2</div>
-                <div class="text-3">Hello <span>Software engeniring</span></div>
+                <div class="text-1">Hello, My name is</div>
+                <div class="text-2">Angelo M.</div>
+                <div class="text-3">A <span>Software Engineering</span></div>
+                <a href="#">Hire me</a>
             </div>
         </div>
     </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <h2 class="title">About me</h2>
+        <div class="max-width">
+            <div class="about-content">
+                <div class="column left">
+                    <img src="style/images/profile-1.jpeg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Angelo and I'm a <span>Software Engineering</span></div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias reprehenderit animi dolore officiis? Quae sapiente alias minima tempora eaque commodi mollitia minus totam beatae amet! Aliquam assumenda voluptatem nisi, rem, sunt reprehenderit ea laboriosam aperiam rerum corporis, veritatis error laborum sapiente a! Magni accusamus consequatur voluptas quisquam expedita, dignissimos quibusdam voluptatem neque ad maiores delectus fugit impedit laudantium molestiae reiciendis.</p>
+                    <a href="#">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section start -->
+    <section class="services" id="services">
+        <h2 class="title">MY services</h2>
+        <div class="max-width">
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Web Design</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore praesentium ad eveniet assumenda non dolorum.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Advertising</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore praesentium ad eveniet assumenda non dolorum.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Apps design</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore praesentium ad eveniet assumenda non dolorum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <h2 class="title">Skills</h2>
+        <div class="max-width">
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills & expirience.</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, atque nemo. Tenetur, id vero totam corrupti, sunt quidem fugit recusandae, consequuntur sit explicabo officia molestias? Vitae mollitia at minima, nostrum molestiae expedita magnam voluptatibus eos possimus eius consectetur officia aliquam nobis nemo earum perspiciatis rem quas qui dolore officiis harum fugiat culpa! Corporis inventore officia ullam id aut eaque architecto.</p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS/SCSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JAVASCRIPT</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>NODE.JS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line nodejs"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Mysql</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- teams section start -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">My teams</h2>
+                <div class="carousel owl-carousel">
+                    <div class="card">
+                        <div class="box">
+                            <img src="style/images/profile-1.jpeg" alt="">
+                            <div class="text">Someone name</div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="style/images/profile-2.jpeg" alt="">
+                            <div class="text">Someone name</div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="style/images/profile-3.jpeg" alt="">
+                            <div class="text">Someone name</div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="style/images/profile-4.jpeg" alt="">
+                            <div class="text">Someone name</div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="style/images/profile-5.jpeg" alt="">
+                            <div class="text">Someone name</div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta distinctio illum dolores nam cupiditate sint qui est laudantium natus inventore alias laborum commodi, ipsa dolore hic optio tempora tenetur dolorum placeat saepe officia obcaecati rem magnam. Amet sequi obcaecati sint ratione hic natus expedita provident asperiores deserunt animi inventore, labore fugiat corporis autem! Cum quos alias nobis non delectus facilis autem eum architecto, molestias eligendi est ipsum veritatis et, corrupti dolorum eveniet eius, aliquam exercitationem iste temporibus animi? Voluptas, voluptate quibusdam? Facere aliquam nulla sequi harum, recusandae minus assumenda eius neque non aut voluptate quidem tempora quibusdam ab eveniet obcaecati facilis atque saepe, libero, sit cum officia. Repellendus aspernatur inventore cumque, cupiditate architecto officia. Ab, eos? Reprehenderit repellat optio, explicabo sed eligendi earum sapiente. Quisquam, quia commodi quasi accusamus quas enim minus tempore praesentium fuga asperiores voluptatibus! Veritatis pariatur dolorum nulla voluptates illum exercitationem neque dolore, aliquam, eos officiis repudiandae modi odit placeat saepe impedit, labore possimus quo facere ea culpa laudantium. Vero, commodi, illo suscipit laudantium iusto sint consequuntur doloremque ipsum voluptatem reprehenderit quibusdam. Asperiores quod at, ab illo in corrupti dolorum. Et, nostrum. Velit quam corrupti labore? Dolorum omnis assumenda odio nam architecto corporis! Voluptatum, qui ut!</p>
     <script src="script.js"></script>
 </body>
