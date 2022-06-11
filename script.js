@@ -5,12 +5,42 @@ $(document).ready(function(){
         }else{
             $('.navbar').removeClass("sticky");
         }
+        if(this.scrollY >500){
+            $('.scroll-up-btn').addClass("show");
+        }else{
+            $('.scroll-up-btn').removeClass("show");
+        }
+    });
+
+    //slide up script
+    $('.scroll-up-btn').click(function(){
+        $('html').animate({scrollTop: 0});
+        $('html').css("scrollBehavior", "auto");
+    });
+
+    $('.navbar .menu li a').click(function(){
+        // applying again smooth scroll on menu items click
+        $('html').css("scrollBehavior", "smooth");
     });
 
     //toggle menu/ nuvbar script
     $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active")
-        $('.menu-btn i').toggleClass("active")
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    });
+
+    //typing animation script
+    var typed = new Typed(".typing",{
+        strings: ["youtuber", "developer", "hahahhaha", "hehehhhehe", "hihihihihh"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+    var typed = new Typed(".typing-2",{
+        strings: ["youtuber", "developer", "hahahhaha", "hehehhhehe", "hihihihihh"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
     });
 
     //owl carousel script
@@ -28,7 +58,7 @@ $(document).ready(function(){
                 items: 2,
                 nav: false
             },
-            100:{
+            1000:{
                 items: 3,
                 nav: false
             }

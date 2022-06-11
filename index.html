@@ -8,21 +8,25 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
 </head>
 <body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Porfo<span>lio.</span></a></div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Teams</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#teams" class="menu-btn">Teams</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -35,7 +39,7 @@
             <div class="home-content">
                 <div class="text-1">Hello, My name is</div>
                 <div class="text-2">Angelo M.</div>
-                <div class="text-3">A <span>Software Engineering</span></div>
+                <div class="text-3">A <span class="typing"></span></div>
                 <a href="#">Hire me</a>
             </div>
         </div>
@@ -50,7 +54,7 @@
                     <img src="style/images/profile-1.jpeg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Angelo and I'm a <span>Software Engineering</span></div>
+                    <div class="text">I'm Angelo and I'm a <span class="typing-2"></span></div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias reprehenderit animi dolore officiis? Quae sapiente alias minima tempora eaque commodi mollitia minus totam beatae amet! Aliquam assumenda voluptatem nisi, rem, sunt reprehenderit ea laboriosam aperiam rerum corporis, veritatis error laborum sapiente a! Magni accusamus consequatur voluptas quisquam expedita, dignissimos quibusdam voluptatem neque ad maiores delectus fugit impedit laudantium molestiae reiciendis.</p>
                     <a href="#">Download CV</a>
                 </div>
@@ -60,7 +64,7 @@
 
     <!-- services section start -->
     <section class="services" id="services">
-        <h2 class="title">MY services</h2>
+        <h2 class="title">My services</h2>
         <div class="max-width">
             <div class="serv-content">
                 <div class="card">
@@ -180,11 +184,71 @@
                         </div>
                     </div>
                 </div>
+        </div>
+    </section>
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <div class="title">Contact me</div>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in touch</div>
+                    <p>Lorem, ipsum dolor sit ametpi ditate aut asperiores pariatur voluptatem iusto blanditiis eaque illo, est velit error sequi ullam.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Angelo Dela Cruz</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Burnay, Talavera, Nueva Ecija</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">delacruzangelo686@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="text" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field subject">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Describe project..." required></textarea>
+                        </div>
+                        <div class="field button">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta distinctio illum dolores nam cupiditate sint qui est laudantium natus inventore alias laborum commodi, ipsa dolore hic optio tempora tenetur dolorum placeat saepe officia obcaecati rem magnam. Amet sequi obcaecati sint ratione hic natus expedita provident asperiores deserunt animi inventore, labore fugiat corporis autem! Cum quos alias nobis non delectus facilis autem eum architecto, molestias eligendi est ipsum veritatis et, corrupti dolorum eveniet eius, aliquam exercitationem iste temporibus animi? Voluptas, voluptate quibusdam? Facere aliquam nulla sequi harum, recusandae minus assumenda eius neque non aut voluptate quidem tempora quibusdam ab eveniet obcaecati facilis atque saepe, libero, sit cum officia. Repellendus aspernatur inventore cumque, cupiditate architecto officia. Ab, eos? Reprehenderit repellat optio, explicabo sed eligendi earum sapiente. Quisquam, quia commodi quasi accusamus quas enim minus tempore praesentium fuga asperiores voluptatibus! Veritatis pariatur dolorum nulla voluptates illum exercitationem neque dolore, aliquam, eos officiis repudiandae modi odit placeat saepe impedit, labore possimus quo facere ea culpa laudantium. Vero, commodi, illo suscipit laudantium iusto sint consequuntur doloremque ipsum voluptatem reprehenderit quibusdam. Asperiores quod at, ab illo in corrupti dolorum. Et, nostrum. Velit quam corrupti labore? Dolorum omnis assumenda odio nam architecto corporis! Voluptatum, qui ut!</p>
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="#">angelo</a> | <span class="far fa-sopyright"></span>2022 all right reserve</span>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
