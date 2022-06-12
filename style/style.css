@@ -312,7 +312,7 @@ section .title::after{
 }
 .skills .skills-content .right .line{
     height: 5px;
-    width: 100px;
+    width: 100%;
     background: lightgray;
     position: relative;
 }
@@ -325,7 +325,21 @@ section .title::after{
     top: 0;
     background-color: crimson;
 }
-
+.skills .skills-content .right .html::before{
+    width: 90%;
+}
+.skills .skills-content .right .css::before{
+    width: 70%;
+}
+.skills .skills-content .right .js::before{
+    width: 60%;
+}
+.skills .skills-content .right .nodejs::before{
+    width: 50%;
+}
+.skills .skills-content .right .mysql::before{
+    width: 80%;
+}
 /* team contenst styling */
 .teams .title::after{
     content: "Who with me";
