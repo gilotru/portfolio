@@ -342,7 +342,7 @@ section .title::after{
 }
 /* team contenst styling */
 .teams .title::after{
-    content: "Who with me";
+    content: "Programmer";
 }
 .teams .carousel .card{
     background: #333333;
